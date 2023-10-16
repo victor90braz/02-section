@@ -13,7 +13,7 @@
 
         <article>
 
-            <h1><a href="/post">First Blog Post</a></h1>
+            <h1><a href="/post"><?= $post ?></a></h1>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
