@@ -9,37 +9,40 @@
     <title>Blog</title>
 </head>
 <body>
-    <article class="container">
 
-        <h1><a href="/post">First Blog Post</a></h1>
+    <div class="container">
+        <article>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
-            At aliquid voluptatum optio dolores rem exercitationem facilis autem, minus sequi.
-        </p>
+            <h1><a href="/post">First Blog Post</a></h1>
 
-    </article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
+                At aliquid voluptatum optio dolores rem exercitationem facilis autem, minus sequi.
+            </p>
 
-    <article class="container">
+        </article>
 
-        <h1><a href="/post">Second Blog Post</a></h1>
+        <article>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
-            At aliquid voluptatum optio dolores rem exercitationem facilis autem, minus sequi.
-        </p>
+            <h1><a href="/post">Second Blog Post</a></h1>
 
-    </article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
+                At aliquid voluptatum optio dolores rem exercitationem facilis autem, minus sequi.
+            </p>
 
-    <article class="container">
+        </article>
 
-        <h1><a href="/post">Third Blog Post</a></h1>
+        <article>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
-            At aliquid voluptatum optio dolores rem exercitationem facilis autem, minus sequi.
-        </p>
+            <h1><a href="/post">Third Blog Post</a></h1>
 
-    </article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
+                At aliquid voluptatum optio dolores rem exercitationem facilis autem, minus sequi.
+            </p>
+
+        </article>
+    </div>
 </body>
 </html>

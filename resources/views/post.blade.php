@@ -9,17 +9,20 @@
     <title>Blog</title>
 </head>
 <body>
-    <article class="container">
+    <div class="container">
 
-        <h1><a href="/post">First Blog Post</a></h1>
+        <article>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
-            At aliquid voluptatum optio dolores rem exercitationem facilis autem, minus sequi.
-        </p>
+            <h1><a href="/post">First Blog Post</a></h1>
 
-    </article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
+                At aliquid voluptatum optio dolores rem exercitationem facilis autem, minus sequi.
+            </p>
 
-    <a href="/">Go Back</a>
+        </article>
+
+        <a href="/">Go Back</a>
+    </div>
 </body>
 </html>
