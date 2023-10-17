@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Post; // Import the Post model
 
 /*
 |--------------------------------------------------------------------------
@@ -19,15 +20,12 @@ Route::get('/', function () {
 
 Route::get('posts/{post}', function ($slug) {
 
-    if (! file_exists($path = __DIR__ . "/../resources/posts/{$slug}.html")) {
-        return redirect('/');
-    }
+    // find a post by its slug and pass it to a view called "post"
 
-    $storeCacheSeconds = 1200;
-    $post = cache()->remember("posts.{$slug}", $storeCacheSeconds , fn() => file_get_contents($path));
+    $post = Post::find($slug);
 
     return view('post', [
-        "post" => $post
+        'post' => $post
     ]);
 
-})->where('post', '[A-z_\-]+');
+})->where('post', '[A-Za-z_\-]+'); // Updated regex to use both upper and lower case letters
