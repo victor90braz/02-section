@@ -13,7 +13,7 @@
     <div class="container">
         <article>
 
-            <h1><a href="/post">First Blog Post</a></h1>
+            <h1><a href="/posts/firstPost">First Blog Post</a></h1>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
@@ -24,7 +24,7 @@
 
         <article>
 
-            <h1><a href="/post">Second Blog Post</a></h1>
+            <h1><a href="/posts/secondPost">Second Blog Post</a></h1>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
@@ -35,7 +35,7 @@
 
         <article>
 
-            <h1><a href="/post">Third Blog Post</a></h1>
+            <h1><a href="/posts/thirdPost">Third Blog Post</a></h1>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
