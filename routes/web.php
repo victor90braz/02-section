@@ -25,7 +25,7 @@ Route::get('posts/{post}', function ($slug) {
         return redirect('/');
     }
 
-    $post = cache()->remember("posts.{$slug}", now()->addMinute(), function () use ($path) {
+    $post = cache()->remember("posts.{$slug}", now()->addMinute(20), function () use ($path) {
         return  file_get_contents($path);
     });
 
