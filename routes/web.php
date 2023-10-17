@@ -25,9 +25,8 @@ Route::get('posts/{post}', function ($slug) {
         return redirect('/');
     }
 
-    $post = cache()->remember("posts.{$slug}", now()->addMinute(20), function () use ($path) {
-        return  file_get_contents($path);
-    });
+    $storeCacheSeconds = 1200;
+    $post = cache()->remember("posts.{$slug}", $storeCacheSeconds , fn() => file_get_contents($path));
 
     return view('post', [
         "post" => $post
