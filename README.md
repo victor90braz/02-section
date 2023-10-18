@@ -1,6 +1,8 @@
-Sure, here's an updated README with the information you provided:
+## GitHub Repository
 
----
+Find the code and more on GitHub: [02-section Repository](https://github.com/victor90braz/02-section.git)
+
+## https://github.com/victor90braz/02-section.git
 
 # Installation
 
