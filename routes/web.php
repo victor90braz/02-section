@@ -21,15 +21,10 @@ Route::get('/', function () {
         );
     }
 
-    ddd($posts);
-
-    /*
-    $posts = Post::all();
-
     return view('posts', [
         'posts' => $posts
     ]);
-    */
+
 
 });
 
