@@ -13,12 +13,9 @@
 
         <article>
 
-            <h1><a href="/post"><?= $post ?></a></h1>
+            <h1><?= $post->title ?></h1>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquam quis animi excepturi nam porro iusto tempore qui minima eaque.
-                At aliquid voluptatum optio dolores rem exercitationem facilis autem, minus sequi.
-            </p>
+            <div><?= $post->body ?></div>
 
         </article>
 
