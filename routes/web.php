@@ -25,7 +25,6 @@ Route::get('/', function () {
         'posts' => $posts
     ]);
 
-
 });
 
 Route::get('posts/{post}', function ($slug) {
