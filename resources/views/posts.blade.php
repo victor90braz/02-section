@@ -9,9 +9,7 @@
     <title>Blog</title>
 </head>
 <body>
-
     <div class="container">
-
         <?php foreach ($posts as $post) : ?>
             <article>
                 <?= $post ?>
