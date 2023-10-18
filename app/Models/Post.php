@@ -24,20 +24,21 @@ class Post {
         return static::all()->firstWhere('slug', $slug);
     }
 
-    public static function all() {
-        $files = File::files(resource_path("posts"));
+public static function all() {
+    $files = File::files(resource_path("posts"));
 
-        return collect($files)->map(function ($file) {
-            $document = YamlFrontMatter::parseFile($file);
+    return collect($files)->map(function ($file) {
+        $document = YamlFrontMatter::parseFile($file);
 
-            return new Post(
-                $document->title,
-                $document->excerpt,
-                $document->date,
-                $document->body(),
-                $document->slug,
-            );
-        });
-    }
+        return new Post(
+            $document->title,
+            $document->excerpt,
+            $document->date,
+            $document->body(),
+            $document->slug
+        );
+    })->sortBy('date');
+}
+
 
 }
