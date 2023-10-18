@@ -2,11 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
+use Illuminate\Support\Facades\File;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 
 Route::get('/', function () {
-    $object = YamlFrontMatter::parseFile(resource_path("posts/fourthPost.html"));
-    ddd($object->matter('title'));
+
+    $files = File::files(resource_path("posts"));
+    $documents = [];
+
+    foreach ($files as $file) {
+        $documents[] = YamlFrontMatter::parseFile($file);
+    }
+
+    ddd($documents);
 
     /*
     $posts = Post::all();
