@@ -8,13 +8,20 @@ use Spatie\YamlFrontMatter\YamlFrontMatter;
 Route::get('/', function () {
 
     $files = File::files(resource_path("posts"));
-    $documents = [];
+    $posts = [];
 
     foreach ($files as $file) {
-        $documents[] = YamlFrontMatter::parseFile($file);
+        $document = YamlFrontMatter::parseFile($file);
+
+        $posts[] = new Post(
+            $document->title,
+            $document->excerpt,
+            $document->date,
+            $document->body(),
+        );
     }
 
-    ddd($documents);
+    ddd($posts);
 
     /*
     $posts = Post::all();
