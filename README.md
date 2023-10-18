@@ -79,7 +79,3 @@ Example:
 > cache('foo')
 > = "bar"
 ```
-
----
-
-Feel free to further modify or refine the information in the README as needed!
